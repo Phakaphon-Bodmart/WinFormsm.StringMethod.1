@@ -18,7 +18,7 @@ namespace WinFormsm.StringMethod
             InitializeComponent();
         }
 
-        void tet(int[] data_2)
+        void Array1(int[] data_2)
         {
             string result = "";
             int sum_2 = 0;
@@ -70,10 +70,10 @@ namespace WinFormsm.StringMethod
 
             //string[] data_2 = textBox1.Lines;
             int[] data_2 = textBox1.Lines.Select(line => int.TryParse(line, out var result) ? result : 0).ToArray();
-            tet(data_2);
+            Array1(data_2);
         }
 
-        void tet2(int[] data_2)
+        void Array2(int[] data_2)
         {
             string result = "";
             int sum_2 = 0;
@@ -104,7 +104,7 @@ namespace WinFormsm.StringMethod
 
             //string[] data_2 = textBox1.Lines;
             int[] data_2 = textBox1.Lines.Select(line => int.TryParse(line, out var result) ? result : 0).ToArray();
-            tet2(data_2);
+            Array2(data_2);
             
         }
     }

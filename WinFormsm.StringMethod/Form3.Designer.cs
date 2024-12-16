@@ -38,17 +38,19 @@
             // 
             // btn1
             // 
-            btn1.Location = new Point(30, 248);
+            btn1.BackColor = SystemColors.ControlDark;
+            btn1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btn1.Location = new Point(28, 249);
             btn1.Name = "btn1";
             btn1.Size = new Size(154, 63);
             btn1.TabIndex = 0;
-            btn1.Text = "รูปแบบที่1";
-            btn1.UseVisualStyleBackColor = true;
+            btn1.Text = "รูปแบบ";
+            btn1.UseVisualStyleBackColor = false;
             btn1.Click += btn1_Click;
             // 
             // txt_in_int
             // 
-            txt_in_int.Location = new Point(30, 41);
+            txt_in_int.Location = new Point(28, 41);
             txt_in_int.Multiline = true;
             txt_in_int.Name = "txt_in_int";
             txt_in_int.Size = new Size(152, 34);
@@ -65,8 +67,8 @@
             // 
             // txt_out
             // 
-            txt_out.BackColor = Color.PeachPuff;
-            txt_out.Font = new Font("Showcard Gothic", 16.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txt_out.BackColor = Color.PaleTurquoise;
+            txt_out.Font = new Font("Segoe UI", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txt_out.Location = new Point(212, 30);
             txt_out.Name = "txt_out";
             txt_out.Size = new Size(359, 389);
@@ -76,14 +78,14 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(31, 191);
+            comboBox1.Location = new Point(28, 184);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(151, 28);
+            comboBox1.Size = new Size(152, 28);
             comboBox1.TabIndex = 6;
             // 
             // txt_in_str
             // 
-            txt_in_str.Location = new Point(28, 124);
+            txt_in_str.Location = new Point(28, 111);
             txt_in_str.Multiline = true;
             txt_in_str.Name = "txt_in_str";
             txt_in_str.Size = new Size(152, 34);
@@ -110,8 +112,6 @@
         #endregion
 
         private Button btn1;
-        private Button btn2;
-        private Button btn3;
         private TextBox txt_in_int;
         private Label label1;
         private Label txt_out;

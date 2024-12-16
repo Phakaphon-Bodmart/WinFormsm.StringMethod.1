@@ -28,116 +28,122 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtrate = new TextBox();
-            label3 = new Label();
-            USD_to_THB = new Button();
-            THB_to_USD = new Button();
-            txtUSD = new TextBox();
-            txtTHB = new TextBox();
-            label2 = new Label();
-            label1 = new Label();
+            txtNum1 = new TextBox();
+            lblMulti = new Label();
+            lblNum = new Label();
+            txtMulti1 = new TextBox();
+            btnNum = new Button();
+            txtNum2 = new TextBox();
+            txtMulti2 = new TextBox();
+            btnMulti = new Button();
             SuspendLayout();
             // 
-            // txtrate
+            // txtNum1
             // 
-            txtrate.Location = new Point(258, 257);
-            txtrate.Multiline = true;
-            txtrate.Name = "txtrate";
-            txtrate.Size = new Size(254, 34);
-            txtrate.TabIndex = 15;
-            txtrate.Text = "33.89";
+            txtNum1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            txtNum1.Location = new Point(35, 101);
+            txtNum1.Multiline = true;
+            txtNum1.Name = "txtNum1";
+            txtNum1.Size = new Size(149, 140);
+            txtNum1.TabIndex = 0;
             // 
-            // label3
+            // lblMulti
             // 
-            label3.AutoSize = true;
-            label3.Location = new Point(30, 260);
-            label3.Name = "label3";
-            label3.Size = new Size(188, 20);
-            label3.TabIndex = 14;
-            label3.Text = "อัตราแลกเปลี่ยน USD กับ THB\r\n";
+            lblMulti.BackColor = Color.BlanchedAlmond;
+            lblMulti.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblMulti.ForeColor = Color.Blue;
+            lblMulti.Location = new Point(625, 98);
+            lblMulti.Name = "lblMulti";
+            lblMulti.Size = new Size(149, 281);
+            lblMulti.TabIndex = 1;
+            lblMulti.Text = "....";
             // 
-            // USD_to_THB
+            // lblNum
             // 
-            USD_to_THB.Location = new Point(586, 155);
-            USD_to_THB.Name = "USD_to_THB";
-            USD_to_THB.Size = new Size(140, 61);
-            USD_to_THB.TabIndex = 13;
-            USD_to_THB.Text = "แปลงเป็นTHB";
-            USD_to_THB.UseVisualStyleBackColor = true;
-            USD_to_THB.Click += USD_to_THB_Click;
+            lblNum.BackColor = Color.BlanchedAlmond;
+            lblNum.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblNum.ForeColor = Color.Blue;
+            lblNum.Location = new Point(216, 101);
+            lblNum.Name = "lblNum";
+            lblNum.Size = new Size(149, 281);
+            lblNum.TabIndex = 2;
+            lblNum.Text = ".....";
             // 
-            // THB_to_USD
+            // txtMulti1
             // 
-            THB_to_USD.Location = new Point(586, 53);
-            THB_to_USD.Name = "THB_to_USD";
-            THB_to_USD.Size = new Size(140, 61);
-            THB_to_USD.TabIndex = 12;
-            THB_to_USD.Text = "แปลงเป็นUSD";
-            THB_to_USD.UseVisualStyleBackColor = true;
-            THB_to_USD.Click += THB_to_USD_Click;
+            txtMulti1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            txtMulti1.Location = new Point(448, 98);
+            txtMulti1.Multiline = true;
+            txtMulti1.Name = "txtMulti1";
+            txtMulti1.Size = new Size(149, 143);
+            txtMulti1.TabIndex = 4;
             // 
-            // txtUSD
+            // btnNum
             // 
-            txtUSD.Location = new Point(258, 172);
-            txtUSD.Multiline = true;
-            txtUSD.Name = "txtUSD";
-            txtUSD.Size = new Size(254, 34);
-            txtUSD.TabIndex = 11;
+            btnNum.Location = new Point(139, 26);
+            btnNum.Name = "btnNum";
+            btnNum.Size = new Size(128, 58);
+            btnNum.TabIndex = 6;
+            btnNum.Text = "หา %";
+            btnNum.UseVisualStyleBackColor = true;
+            btnNum.Click += btnNum_Click;
             // 
-            // txtTHB
+            // txtNum2
             // 
-            txtTHB.Location = new Point(258, 70);
-            txtTHB.Multiline = true;
-            txtTHB.Name = "txtTHB";
-            txtTHB.Size = new Size(254, 34);
-            txtTHB.TabIndex = 10;
+            txtNum2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            txtNum2.Location = new Point(35, 247);
+            txtNum2.Multiline = true;
+            txtNum2.Name = "txtNum2";
+            txtNum2.Size = new Size(149, 140);
+            txtNum2.TabIndex = 8;
             // 
-            // label2
+            // txtMulti2
             // 
-            label2.AutoSize = true;
-            label2.Location = new Point(98, 175);
-            label2.Name = "label2";
-            label2.Size = new Size(120, 20);
-            label2.TabIndex = 9;
-            label2.Text = "ค่าเงินดอลลาร์สหรัฐ";
+            txtMulti2.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold);
+            txtMulti2.Location = new Point(448, 247);
+            txtMulti2.Multiline = true;
+            txtMulti2.Name = "txtMulti2";
+            txtMulti2.Size = new Size(149, 143);
+            txtMulti2.TabIndex = 9;
             // 
-            // label1
+            // btnMulti
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(149, 73);
-            label1.Name = "label1";
-            label1.Size = new Size(69, 20);
-            label1.TabIndex = 8;
-            label1.Text = "ค่าเงินบาท";
+            btnMulti.Location = new Point(550, 26);
+            btnMulti.Name = "btnMulti";
+            btnMulti.Size = new Size(128, 58);
+            btnMulti.TabIndex = 10;
+            btnMulti.Text = "หาผลคูณ";
+            btnMulti.UseVisualStyleBackColor = true;
+            btnMulti.Click += btnMulti_Click;
             // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtrate);
-            Controls.Add(label3);
-            Controls.Add(USD_to_THB);
-            Controls.Add(THB_to_USD);
-            Controls.Add(txtUSD);
-            Controls.Add(txtTHB);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(btnMulti);
+            Controls.Add(txtMulti2);
+            Controls.Add(txtNum2);
+            Controls.Add(btnNum);
+            Controls.Add(txtMulti1);
+            Controls.Add(lblNum);
+            Controls.Add(lblMulti);
+            Controls.Add(txtNum1);
             Name = "Form2";
-            Text = "แลกเงิน";
+            Text = "สูตรคำนวณ";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox txtrate;
-        private Label label3;
-        private Button USD_to_THB;
-        private Button THB_to_USD;
-        private TextBox txtUSD;
-        private TextBox txtTHB;
-        private Label label2;
-        private Label label1;
+        private TextBox txtNum1;
+        private Label lblMulti;
+        private Label lblNum;
+        private TextBox txtMulti1;
+        private Button btnNum;
+        private TextBox txtNum2;
+        private TextBox txtMulti2;
+        private Button btnMulti;
     }
 }

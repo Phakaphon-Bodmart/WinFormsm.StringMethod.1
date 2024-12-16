@@ -56,6 +56,7 @@
             // 
             // textBox1
             // 
+            textBox1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             textBox1.Location = new Point(27, 12);
             textBox1.Multiline = true;
             textBox1.Name = "textBox1";
@@ -64,7 +65,8 @@
             // 
             // label1
             // 
-            label1.BackColor = Color.NavajoWhite;
+            label1.BackColor = Color.PaleTurquoise;
+            label1.Font = new Font("Segoe UI", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.Location = new Point(493, 15);
             label1.Name = "label1";
             label1.Size = new Size(272, 423);

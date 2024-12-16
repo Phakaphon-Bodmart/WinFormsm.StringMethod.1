@@ -16,67 +16,32 @@ namespace WinFormsm.StringMethod
         {
             InitializeComponent();
         }
-        double THB_USD(double thb, double rate)
+        private int Multiply(int a, int b)
         {
-            return thb / rate;
+            return a * b;
         }
 
-        double USD_THB(double usd, double rate)
+        private int Modulus(int a, int b)
         {
-            return usd * rate;
+            return a % b;
         }
 
-        private void THB_to_USD_Click(object sender, EventArgs e)
+        private void btnMulti_Click(object sender, EventArgs e)
         {
-            double a1 = 0;
-            double a2 = 0;
-            if (double.TryParse(txtrate.Text, out a1) == false)
-            {
-                MessageBox.Show("กรอกข้อมูลเป็นตัวเลข", "Error");
-                txtrate.Focus();
-                txtrate.SelectAll();
-                return;
-            }
-            else if (double.TryParse(txtTHB.Text, out a2) == false)
-            {
-                MessageBox.Show("กรอกข้อมูลเป็นตัวเลข", "Error");
-                txtTHB.Focus();
-                txtTHB.SelectAll();
-                return;
-            }
+            int num1 = int.Parse(txtMulti1.Text);
+            int num2 = int.Parse(txtMulti2.Text);
+            int product = Multiply(num1, num2);
 
-            double a3 = THB_USD(a2, a1);
-            txtUSD.Text = Convert.ToString(a3);
-
-
-
-            //double rate = Convert.ToDouble(txtrate.Text);
-            //double thb = Convert.ToDouble(txtTHB.Text);
-            //double usd = Convert.ToDouble(txtUSD.Text);
-            //txtTHB.Text = USD_THB(usd,rate);
+            lblMulti.Text = $"ผลคูณของ {num1} และ {num2} คือ {product}\n";
         }
 
-        private void USD_to_THB_Click(object sender, EventArgs e)
+        private void btnNum_Click(object sender, EventArgs e)
         {
-            double a1 = 0;
-            double a2 = 0;
-            if (double.TryParse(txtrate.Text, out a1) == false)
-            {
-                MessageBox.Show("กรอกข้อมูลเป็นตัวเลข", "Error");
-                txtrate.Focus();
-                txtrate.SelectAll();
-                return;
-            }
-            else if (double.TryParse(txtUSD.Text, out a2) == false)
-            {
-                MessageBox.Show("กรอกข้อมูลเป็นตัวเลข", "Error");
-                txtUSD.Focus();
-                txtUSD.SelectAll();
-                return;
-            }
+            int num1 = int.Parse(txtNum1.Text);
+            int num2 = int.Parse(txtNum2.Text);
+            int remainder = Modulus(num1, num2);
 
-            double a3 = USD_THB(a2, a1);
-            txtTHB.Text = Convert.ToString(a3);
+            lblNum.Text = $"เศษเหลือจาก {num1} หารด้วย {num2} คือ {remainder}";
         }
     }
 }

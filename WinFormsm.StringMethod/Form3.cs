@@ -36,7 +36,7 @@ namespace WinFormsm.StringMethod
                 txt_in_str.SelectAll();
                 return;
             }
-            txt_out.Text = bb1(Convert.ToInt32(txt_in_int.Text), txt_in_str.Text , comboBox1.Text);
+            txt_out.Text = type(Convert.ToInt32(txt_in_int.Text), txt_in_str.Text , comboBox1.Text);
 
 
         }
@@ -47,7 +47,7 @@ namespace WinFormsm.StringMethod
             comboBox1.Items.AddRange(bb);
         }
 
-        string bb1(int size, string charc , string selectedItem)
+        string type(int size, string charc , string selectedItem)
         {
 
             string result = "";
@@ -68,7 +68,7 @@ namespace WinFormsm.StringMethod
                         }
                         else
                         {
-                            result += "   "; 
+                            result += "  "; 
                         }
                     }
                     result += "\n"; 
